@@ -332,25 +332,77 @@ nav.navegacion-principal  :last-child{
 
     /** Talleres **/
 
-    seccion.programa
-    {
+    section.programa{
         position: relative;
 
     }
 
-    div.contenedor-video{
+   section div.contenedor-video{
         max-width: 100%;
         overflow-x: hidden;
 
     }
 
-    div.contenido-programa{
+    section div.contenido-programa{
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
     }
+
+   div.programa-evento{
+        background-color: rgba(255, 255, 255, .8);
+        padding: 15px;
+        margin-top: 80px;
+        width: 50%;
+    }
+
+@media only screen and(min-width: 768px)
+{
+    div.programa-evento{
+    width: 70%;
+    }
+} 
+
+@media only screen and(min-width: 992px)
+{
+    div.programa-evento{
+    width: 20%;
+    }
+}    
+
+
+
+nav.menu-programa{
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+@media only screen and (min-width: 768px)
+{
+    nav.menu-programa{
+        display: table;
+    }
+}
+
+nav.menu-programa a{
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+@media only screen and (min-width: 768px)
+{
+    nav.menu-programa a{
+        display: table-cell;
+    }
+}
+
 
 /* ==========================================================================
    Helper classes
