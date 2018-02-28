@@ -128,6 +128,34 @@ h2::after
     display: block;
 }
 
+h3{
+    font-size: 1.8em;
+    color: #f24918;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+
+}
+
+.button {
+    background-color: #f24918;
+    padding: 10px 40px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all .3s ease;
+}
+.button:hover{
+    background-color: #e33000;
+}
+
+.float-right
+{
+    float: right;
+}
 .seccion{
     padding: 30px 0;
 }
@@ -403,6 +431,75 @@ nav.menu-programa a{
     }
 }
 
+nav.menu-programa a i{
+    color: #f24918;
+    font-size: 1.8em;
+    margin-right: 10px;
+    
+}
+
+/**detalle evento **/
+
+div.detalle-evento
+{
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    padding: 0 20px;
+}
+
+div.detalle-evento:nth-child(2){
+    border: none;
+}
+
+div.detalle-evento p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/**Invitados**/
+ul.lista-invitados li{
+    padding: 10px;
+    float: left;
+}
+@media only screen and(min-width: 480px)
+{
+    ul.lista-invitados{
+        width: 50%;
+    }
+}
+
+@media only screen and(min-width: 768px)
+{
+    ul.lista-invitados
+    {
+        width:33.3%;
+    }
+}
+
+div.invitado{
+    position:relative;
+    overflow: hidden;
+}
+
+div.invitado img {
+    max-width: 100%;
+}
+
+div.invitado p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 10px;
+    margin: 0;
+    background-color:rgba(0, 0, 0, 0.55);
+    width: 100%;
+}
 
 /* ==========================================================================
    Helper classes
