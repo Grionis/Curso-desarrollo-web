@@ -146,6 +146,7 @@ h3{
     margin-top: 20px;
     display: inline-block;
     transition: all .3s ease;
+    border: 1px solid #f24918;
 }
 .button:hover{
     background-color: #e33000;
@@ -618,6 +619,145 @@ div.tabla-precio h3 {
     text-transform: uppercase;
 }
 
+div.tabla-precio ul li:before{
+    font-family: 'FontAwasome';
+    dispplay: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    font-size: 20px;
+    color: green;
+    -webkit-font-smoothing:antialiased;
+    content: '\f00c';
+}
+
+div.tabla-precio:hover
+{
+    transform: scale(1.1);
+    border: 1px solid #f24918;
+    box-shadow: 0px 0px 50px 666;
+    transition: all .5s ease;
+}
+
+.button.hollow,
+.button.hollow:hover{
+    background-color: white;
+    color: #f24918;
+   
+}
+
+
+/**Mapa**/
+
+div.mapa {
+    height: 420px;
+}
+
+/**Testimoniales **/
+
+div.testimoniales{
+    padding: 20px;
+}
+
+div.testimonial
+{
+    padding: 5px;
+}
+
+@media only screen and (min-width: 768px)
+{
+    div.testimonial
+    {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+blockquote{
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    position: relative;
+    margin: 0 0 10px 0;
+    padding-bottom: 20px;
+}
+
+blockquote p 
+{
+    text-align: left!important;
+    font-size: .8em;
+    font-family: 'PT Sans' sans-serif;
+    padding: 0 20px 0 65px;
+
+
+}
+
+blockquote p::before{
+    content: '\201c';
+    position: absolute;
+    left:16px;
+    top: 0px;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #f24918;
+
+
+}
+
+footer.info-testimonial {
+
+    padding: 0;
+}
+footer.info-testimonial img {
+    float: left;
+    width: 20%;
+    border-radius: 50%;
+    margin-left: 40px;
+  
+
+}
+
+footer.info-testimonial cite {
+    text-align: left;
+    color: #f24918;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-top: 20px;
+    width: 66.6%;
+    float: right;
+}
+
+footer.info-testimonial cite span {
+    color: #000000;
+    display: block;
+    text-transform: none;
+    margin-top: 10px;
+}
+
+
+/* main newletter*/
+div.newsletter{
+    position: relative;
+    height: auto;
+}
+
+div.newsletter::before {
+    background-image: url(../img/bg-newsletter.jpg);
+    content: '';
+}
+
+div.newsletter .contenido {
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+div.newsletter .contenido p {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    position: relative;
+}
 
 /* ==========================================================================
    Helper classes
