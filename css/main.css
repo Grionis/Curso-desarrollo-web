@@ -622,7 +622,7 @@ div.tabla-precio h3 {
 
 div.tabla-precio ul li:before{
     font-family: 'FontAwasome';
-    dispplay: inline-block;
+    display: inline-block;
     vertical-align: top;
     padding: 0 5px;
     font-size: 20px;
@@ -796,6 +796,64 @@ div.cuenta-regresiva
     }
 }
 
+
+/* footer */
+
+footer 
+{
+    background-color: #353535;
+    padding-top: 40px;
+    margin-top: 20px;
+
+}
+
+footer .contenedor > div {
+    color: #ffffff;
+    padding: 0 20px;
+    font-size: 12px;
+    text-align: center;
+    
+}
+
+@media only screen and (min-width: 768px)
+{
+        footer .contenedor > div {
+            width: 33.3%;
+            float: left;
+            padding-top: 20px;
+        }
+}
+
+footer h3 {
+    color: white;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 20px;
+}
+
+footer h3 span{
+    color: #f24918;
+}
+
+footer .ultimos-tweets
+{
+    margin-bottom: 20px;
+}
+
+
+footer nav.redes-sociales
+{
+    font-size: 25px;
+}
+
+p.copyright {
+    background-color: #2e2e2e;
+    color: white;
+    padding:  10px 0;
+    margin: 0   px;
+
+    text-align: center;
+}
 
 /* ==========================================================================
    Helper classes
