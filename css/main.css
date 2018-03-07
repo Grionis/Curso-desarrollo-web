@@ -744,6 +744,7 @@ div.newsletter{
 div.newsletter::before {
     background-image: url(../img/bg-newsletter.jpg);
     content: '';
+    
 }
 
 div.newsletter .contenido {
