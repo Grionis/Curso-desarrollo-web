@@ -316,7 +316,7 @@ nav.navegacion-principal a {
     padding: 10px 20px;
     display: inline-block;
     width: auto;
-    display: inline-block;
+
     text-align: center;
     margin: 20px 10px 0 0;
 
@@ -577,6 +577,7 @@ p.numero
     font-size: 2em;
     display: block;
     margin: 0 0 10px 0;
+    text-align: center;
 
 }
 
@@ -643,6 +644,16 @@ div.tabla-precio:hover
     background-color: white;
     color: #f24918;
    
+}
+
+.button.transparente{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.button.transparente:hover {
+    background-color: #f24918;
+    border: 1px solid #f24918;  
 }
 
 
@@ -759,6 +770,32 @@ div.newsletter .contenido p {
     text-transform: uppercase;
     position: relative;
 }
+
+
+div.newsletter .contenido h3 {
+    color:white;
+    text-transform: uppercase;
+    font-size: 7vw;
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+div.cuenta-regresiva
+{
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px)
+{
+    div.cuenta-regresiva ul li {
+        width: 25%;
+        float: left;
+    }
+}
+
 
 /* ==========================================================================
    Helper classes
