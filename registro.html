@@ -69,7 +69,7 @@
 
       <section class="seccion contenedor">
         <h2>registro de usuario</h2>
-        <form id="registro"  class="registro" action="index.html" method="post"></form>
+        <form id="registro"  class="registro" action="index.html" method="post">
             <div class="datos-usuario" class="registro caja clearfix">
                 <div class="campo">
                     <label for="nombre"> Nombre</label>
@@ -210,10 +210,49 @@
                       </div> <!--#domingo-->
                   </div><!--.caja-->
 </div> <!--#eventos-->
+<div  id="resumen" class="resumen ">
+    <h3>Pago y Extras</h3>
+    <div class="caja clearfix">
+        <div class="extras">
+            <div class="orden">
+                <label for="camisa_evento">Camisa del evento $10<small>(Promocion 7% dto.</small></label><br>
+                <input type="number" min="0" id="camisa_evento" size="3" placeholder="0">
+            </div><!-- orden -->
+            <div class="orden">
+                <label for="etiquetas">Paquete de 10 etiquetas $2<small>(HTML, CSS, JAVASCRIPT,PHP, MYSQL)</small></label><br>
+                <input type="number" min="0" id="etiquetas" size="3" placeholder="0">
+            </div><!-- orden -->
+            <div class="orden">
+                <label for="regalo">Seleccione un regalo</label><br>
+                    <select name="" id="regalo" required>
+                        <option value="">- Seleccione un regalo -</option>
+                        <option value="ETI">- Etiquetas -</option>
+                        <option value="PUL">- Pulsera -</option>
+                        <option value="PLU">- Plumas -</option>
+                    </select>
+            </div><!-- orden -->
+                <input type="button" id="calcular" class="button" value="calcular">
+        </div><!--Extras-->
 
+
+<div class="total">
+    <p>Resumen</p>
+    <div id="lista-productos">
+
+    </div>
+    <p>Total:</p>
+    <div id="suma-total">
+
+    </div>
+    <input type="submit" name="submit" class="button" value="Pagar">
+</div><!--Total-->
+</div><!--Caja-->
+</div><!--Resumen-->
+</form>
     </section>
    
 
+<!--FOOTER -->
     <footer class="site-footer">
         <div class="contenedor clearfix">
             <div class="footer-informacion">

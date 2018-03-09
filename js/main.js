@@ -2,6 +2,24 @@
 (function(){
     'use strict';
     document.addEventListener('DOMContentLoaded', function(){
-        alert("test cagado finalizado");
-    });
+      
+
+        //Campos datos usuario
+        var nombre = document.getElementById('nombre');
+        var apellido = document.getElementById('apellido');
+        var email = document.getElementById('email');
+
+
+        //Campos pases
+        var pase_dia = document.getElementById('pase_dia');
+        var pase_dosdia = document.getElementById('pase_dosdisas');
+        var pase_completo = document.getElementById('pase_completo');
+
+        //botones y divs
+        var calcular = document.getElementById('calcular');
+        var errorDiv = document.getElementById('error');
+        var botonRegistro = document.getElementById('btnRegistro');
+        var resultado = document.getElementByid('lista-productos');
+        
+    });// DOM CONTECT LOADED
 })();
