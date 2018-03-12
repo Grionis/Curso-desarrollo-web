@@ -976,12 +976,26 @@ div.resumen div.total {
     float: right;
     width: 50%;
     padding: 20px;
+    text-align: center;
 
 }
 
 div.resumen input {
     display: block;
     margin: 10px auto;
+}
+
+#lista-productos
+{
+    background-color: #e1e1e1;
+    padding: 20px;
+}
+
+#suma-total{
+    text-align: center;
+    font-size: 2em;
+    color: #f24918;
+    padding: 10px;
 }
 
 

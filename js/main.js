@@ -21,8 +21,8 @@
         var calcular = document.getElementById('calcular');
         var errorDiv = document.getElementById('error');
         var botonRegistro = document.getElementById('btnRegistro');
-        var resultado = document.getElementById('lista-productos');
-        
+        var listado_productos = document.getElementById('lista-productos');
+        var suma = document.getElementById('suma-total');
 
         //extras
 
@@ -40,14 +40,35 @@
             }
             else
             {
-                var boletoDia = pase_dia.value,
-                    boleto2Dia = pase_dosdia.value,
-                    boletoCompleto = pase_completo.value,
-                    cant_camisas = camisas.value,
-                    cant_etiquetas = etiquetas; 
+                var boletoDia = parseInt( pase_dia.value, 10) || 0,
+                    boleto2Dia = parseInt(pase_dosdia.value, 10) || 0,
+                    boletoCompleto = parseInt(pase_completo.value, 10) || 0 ,
+                    cant_camisas = parseInt(camisas.value, 10) ||  0 ,
+                    cant_etiquetas = parseInt(etiquetas.value, 10) || 0 ; 
 
                     var total = (boletoDia * 30) + (boleto2Dia * 30) + (boleto2Dia * 50) + ((cant_camisas * 10) * .93) + (cant_etiquetas * 2);
-                    console.log('total a pagar:' + total );
+                    
+                    var listaProductos = [];
+
+                    if(boletoDia >= 1 )     { listaProductos.push(boletoDia + ' Pases por dia');        }
+                    if(boleto2Dia >= 1)     { listaProductos.push(boleto2Dia + ' Pases por 2 dias');    }
+                    if(boletoCompleto >= 1) { listaProductos.push(boletoCompleto + ' Pases completos'); }
+                    
+                    if(cant_camisas >= 1)   { listaProductos.push(cant_camisas + ' Camisas');           }
+                    if(cant_etiquetas >= 1) { listaProductos.push(cant_etiquetas + ' Etiquetas');       }
+
+                
+                     listado_productos.innerHTML = '';
+                     suma.innerHTML = '';
+
+                    for(var i = 0; i < listaProductos.length; i ++)
+                    {
+                        listado_productos.innerHTML  += listaProductos[i] + '<br/>';
+                        
+                    }
+
+                    suma.innerHTML = "$ " + parseInt(total, 10) ||0;
+
             }
         }
     });// DOM CONTECT LOADED
