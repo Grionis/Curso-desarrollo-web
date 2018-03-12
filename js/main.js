@@ -42,9 +42,11 @@
             {
                 var boletoDia = pase_dia.value,
                     boleto2Dia = pase_dosdia.value,
-                    boletoCompleto = pase_completo.value;
+                    boletoCompleto = pase_completo.value,
+                    cant_camisas = camisas.value,
+                    cant_etiquetas = etiquetas; 
 
-                    var total = (boletoDia * 30) + (boleto2Dia * 30) + (boleto2Dia * 50);
+                    var total = (boletoDia * 30) + (boleto2Dia * 30) + (boleto2Dia * 50) + ((cant_camisas * 10) * .93) + (cant_etiquetas * 2);
                     console.log('total a pagar:' + total );
             }
         }
