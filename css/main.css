@@ -859,10 +859,16 @@ p.copyright {
 
 /*Registro*/
 
+.datos-usuario
+{
+    background-color: white;
+    
+}
 form.registro h3 {
    text-align: center;
    text-transform: uppercase;
     margin: 20px 0 0 0;
+    
 }
 
 form.registro label {
@@ -916,6 +922,7 @@ div.paquetes .tabla-precio input {
 .contenido-dia {
     padding: 20px;
     /*display: none; */
+    display: none;
 
 }
 
@@ -989,6 +996,7 @@ div.resumen input {
 {
     background-color: #e1e1e1;
     padding: 20px;
+    display: none;
 }
 
 #suma-total{
@@ -996,6 +1004,12 @@ div.resumen input {
     font-size: 2em;
     color: #f24918;
     padding: 10px;
+}
+
+#error
+{
+    clear: both;
+    width: auto;
 }
 
 
