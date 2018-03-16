@@ -112,7 +112,8 @@ function initMap() {
                      listado_productos.innerHTML = '';
                      suma.innerHTML = '';
                      listado_productos.style.display = "block";
-                    for(var i = 0; i < listaProductos.length; i ++)
+
+                     for(var i = 0; i < listaProductos.length; i ++)
                     {
                         listado_productos.innerHTML  += listaProductos[i] + '<br/>';
                         
@@ -142,3 +143,21 @@ function initMap() {
         }
     });// DOM CONTECT LOADED
 })();
+
+$(function () {
+
+    //programa de conferencia
+    $('.programa-evento .info-curso:first').show();
+    $('.menu-programa a:first').addClass('activo');
+
+    $('.menu-programa a').on('click', function() {
+        $('.menu-programa a ').removeClass('activo');
+        $('.ocultar').hide();
+        var enlace = $(this).attr('href');
+        console.log(enlace);
+
+        $(enlace).fadeIn(1000);
+
+        return false;
+    });
+});

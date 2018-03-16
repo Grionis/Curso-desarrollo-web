@@ -365,6 +365,10 @@ nav.navegacion-principal  :last-child{
 
     }
 
+    div.ocultar{
+        display: none;
+    }
+
    section div.contenedor-video{
         max-width: 100%;
         overflow-x: hidden;
@@ -405,7 +409,7 @@ nav.navegacion-principal  :last-child{
 nav.menu-programa{
     width: 100%;
     border-bottom: 1px solid black;
-    padding-bottom: 10px;
+    
 }
 @media only screen and (min-width: 768px)
 {
@@ -422,6 +426,25 @@ nav.menu-programa a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 10px;
     font-size: 1.2em;
+    position: relative;
+    padding-bottom: 10px;
+
+}
+
+nav.menu-programa a.activo::after{
+position: absolute;
+content: '';
+left:0;
+right: 0;
+margin-left: auto;
+margin-right: 0;
+height: 20px;
+width: 30px;
+
+bottom: -20px;
+background-image: url(../img/talleres-flecha.jpg);
+background-position:top center;
+background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 768px)
